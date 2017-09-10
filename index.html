@@ -9,6 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
       <!-- Bootstrap CSS -->
       <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css rel=stylesheet>
       <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
       <!-- Custom CSS -->
       <link href="includes/css/styles.css" rel="stylesheet">
@@ -16,191 +17,194 @@
       <script src="includes/js/modernizr-2.6.2.min.js"></script>
    </head>
    <body>
-      <div class="container">
+      <div class=container-fluid style="padding: 0px" id=main>
+         <!-- Header -->
          <header>
-            <div class="navbar navbar-fixed-top">
-               <div class="container">
-                  <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-                  <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+            <nav class="navbar navbar-default ">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>	
-                  </button>				
-                  <a class="navbar-brand" href="/"><img class="logo pull-left img-responsive" src="images/logo.png" alt="DC_comics Logo"></a>
-                  <nav class="navig nav-collapse collapse navbar-responsive-collapse">
-                     <ul class="nav navbar-nav">
-                        <li>
-                           <a href="#">CHARACTERS</a>
-                        </li>
-                        <li>
-                           <a href="#">COMICS</a>
-                        </li>
-                        <li class="dropdown">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                           MOVIES<strong class="caret"></strong></a>
-                           <ul class="dropdown-menu">
-                              <li>
-                                 <a href="#">GREEN LANTERN</a>
-                              </li>
-                              <li>
-                                 <a href="#">BATMAN BEGINS</a>
-                              </li>
-                              <li>
-                                 <a href="#">THE DARK KNIGHT</a>
-                              </li>
-                              <li>
-                                 <a href="#">MAN OF STEEL</a>
-                              </li>
-                              <li>
-                                 <a href="#">BATMAN VS SUPERMAN</a>
-                              </li>
-                              <li>
-                                 <a href="#">JUSTICE LEAGUE</a>
-                              </li>
-                           </ul>
-                           <!-- end dropdown-menu -->
-                        </li>
-                        <li>
-                           <a href="#">GAMES</a>
-                        </li>
-                        <li class="dropdown">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                           NEWS<strong class="caret"></strong></a>
-                           <ul class="dropdown-menu">
-                              <li>
-                                 <a href="#">FOR FANS</a>
-                              </li>
-                              <li>
-                                 <a href="#">FOR FAMILY</a>
-                              </li>
-                              <li>
-                                 <a href="#">FOR PRESS</a>
-                              </li>
-                           </ul>
-                           <!-- end dropdown-menu -->
-                        <li class="dropdown">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                           SHOP<strong class="caret"></strong></a>
-                           <ul class="dropdown-menu">
-                              <li>
-                                 <a href="#">SHOP DC</a>
-                              </li>
-                              <li>
-                                 <a href="#">SHOP DC COLLECTIBLES</a>
-                              </li>
-                           </ul>
-                           <!-- end dropdown-menu -->
-                        </li>
-                     </ul>
-                     <form class="navbar-form pull-right">
-                        <input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
-                        <button id="search" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                     </form>
-                     <!-- end navbar-form -->
-                  </nav>
-                  <!-- end nav-collapse -->
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand pull-left" href="#"> <img class=logo src=images/logo.png alt="DC Comics"></a>
                </div>
-               <!-- end container -->
-            </div>
-            <!-- end navbar -->
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                     <li>
+                        <a href="#">CHARACTERS</a>
+                     </li>
+                     <li>
+                        <a href="#">COMICS</a>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        MOVIES<strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <a href="#">GREEN LANTERN</a>
+                           </li>
+                           <li>
+                              <a href="#">BATMAN BEGINS</a>
+                           </li>
+                           <li>
+                              <a href="#">THE DARK KNIGHT</a>
+                           </li>
+                           <li>
+                              <a href="#">MAN OF STEEL</a>
+                           </li>
+                           <li>
+                              <a href="#">BATMAN VS SUPERMAN</a>
+                           </li>
+                           <li>
+                              <a href="#">JUSTICE LEAGUE</a>
+                           </li>
+                        </ul>
+                        <!-- end dropdown-menu -->
+                     </li>
+                     <li>
+                        <a href="#">GAMES</a>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        NEWS<strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <a href="#">FOR FANS</a>
+                           </li>
+                           <li>
+                              <a href="#">FOR FAMILY</a>
+                           </li>
+                           <li>
+                              <a href="#">FOR PRESS</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <!-- end dropdown-menu -->
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        SHOP<strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <a href="#">SHOP DC</a>
+                           </li>
+                           <li>
+                              <a href="#">SHOP DC COLLECTIBLES</a>
+                           </li>
+                        </ul>
+                        <!-- end dropdown-menu -->
+                     </li>
+                  </ul>
+                  <form class="navbar-form pull-right">
+                     <input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+                     <button id="search" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                  </form>
+                  <!-- end navbar-form -->
+               </div>
+               <!-- /.container-fluid -->
+            </nav>
          </header>
-         <br><br><br><br><br>
-         <div class="carousel slide" id="myCarousel">
-            <ol class="carousel-indicators">
-               <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-               <li data-slide-to="1" data-target="#myCarousel"></li>
-               <li data-slide-to="2" data-target="#myCarousel"></li>
-               <li data-slide-to="3" data-target="#myCarousel"></li>
-               <li data-slide-to="4" data-target="#myCarousel"></li>
-            </ol>
-            <div class="carousel-inner">
-               <div class="item active" id="slide1">
-                  <div class="container">
-                     <div class="carousel-caption">
-                        <h4>Man vs God</h4>
+         <div class="container">
+            <div class="carousel slide" id="myCarousel" data-ride=carousel>
+               <ol class="carousel-indicators">
+                  <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                  <li data-slide-to="1" data-target="#myCarousel"></li>
+                  <li data-slide-to="2" data-target="#myCarousel"></li>
+                  <li data-slide-to="3" data-target="#myCarousel"></li>
+                  <li data-slide-to="4" data-target="#myCarousel"></li>
+               </ol>
+               <div class="carousel-inner">
+                  <div class="item active" id="slide1">
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <h4>Man vs God</h4>
+                        </div>
+                        <!-- end carousel-caption-->
                      </div>
-                     <!-- end carousel-caption-->
+                     <!-- end item -->
+                  </div>
+                  <div class="item" id="slide2">
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <h4>Fastest Man Alive</h4>
+                        </div>
+                        <!-- end carousel-caption-->
+                     </div>
+                     <!-- end item -->
+                  </div>
+                  <div class="item" id="slide3">
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <h4>Princess of Amazons</h4>
+                        </div>
+                        <!-- end carousel-caption-->
+                     </div>
+                     <!-- end item -->
+                  </div>
+                  <div class="item" id="slide4">
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <h4>Team of MetaHumans to face the Catastrophic threat</h4>
+                        </div>
+                        <!-- end carousel-caption-->
+                     </div>
+                     <!-- end item -->
+                  </div>
+                  <div class="item" id="slide5">
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <h4>willpower-fed source of power of the Green Lantern</h4>
+                        </div>
+                        <!-- end carousel-caption-->
+                     </div>
+                     <!-- end item -->
                   </div>
                </div>
-               <!-- end item -->
-               <div class="item" id="slide2">
-                  <div class="container">
-                     <div class="carousel-caption">
-                        <h4>Fastest Man Alive</h4>
-                     </div>
-                     <!-- end carousel-caption-->
-                  </div>
-               </div>
-               <!-- end item -->
-               <div class="item" id="slide3">
-                  <div class="container">
-                     <div class="carousel-caption">
-                        <h4>Princess of Amazons</h4>
-                     </div>
-                     <!-- end carousel-caption-->
-                  </div>
-               </div>
-               <!-- end item -->
-               <div class="item" id="slide4">
-                  <div class="container">
-                     <div class="carousel-caption">
-                        <h4>Team of MetaHumans to face the Catastrophic threat</h4>
-                     </div>
-                     <!-- end carousel-caption-->
-                  </div>
-               </div>
-               <!-- end item -->
-               <div class="item" id="slide5">
-                  <div class="container">
-                     <div class="carousel-caption">
-                        <h4>willpower-fed source of power of the Green Lantern</h4>
-                     </div>
-                     <!-- end carousel-caption-->
-                  </div>
-               </div>
-               <!-- end item -->
+               <!-- carousel-inner -->
+               <!-- Controls -->
+               <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+               <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
             </div>
-            <!-- carousel-inner -->
-            <!-- Controls -->
-            <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
-            <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+            <!-- end myCarousel -->
          </div>
-         <!-- end myCarousel -->
          <div class="container">
             <div class="row" id="features">
                <div class="col-sm-4 feature">
-                  <div class="panel dcrebirth">
+                  <div class="panel panel-default dcrebirth">
                      <div class="panel-heading">
                         <h3 class="panel-title">DC Rebirth</h3>
                      </div>
                      <!-- end panel-heading -->
                      <img class="img-responsive" src="images/dcrebirth.jpg" alt="DC_Rebirth">
-                     <p>Your favorite heroes and villains are about to explode with newfound vitality and importance in DC Rebirth, an epic new publishing event that will reshape the DC Universe for generations to come. Care to come along for the ride?</p>
+                     <p>Your favorite heroes and villains are about to explode with newfound vitality and importance in DC Rebirth, an epic new publishing event that will reshape the DC Universe for generations to come.</p>
                      <a href="http://www.dccomics.com/blog/2016/05/26/experience-dc-rebirth" target="_blank" class="btn btn-warning btn-block button_batman">Click To Know More</a>
                   </div>
                   <!-- end panel -->
                </div>
                <div class="col-sm-4 feature">
-                  <div class="panel dcrebirth">
+                  <div class="panel panel-default dcrebirth">
                      <div class="panel-heading">
                         <h3 class="panel-title">Some Batman Day Essential Reading</h3>
                      </div>
                      <!-- end panel-heading -->
                      <img class="img-responsive" src="images/col2.jpg" alt="Harley_Quinn">
-                     <p>The Caped Crusader has never been stopped. Not by the Joker. Not by Two-Face. Not even by the Justice League.But now, in the wake of DC UNIVERSE: REBIRTH, Batman faces his most challenging foe ever.</p>
+                     <p>The Caped Crusader has never been stopped. Not by the Joker. Not by Two-Face. Not even by the Justice League.But now, in the wake of DC UNIVERSE: REBIRTH.</p>
                      <a href="http://www.dccomics.com/blog/2017/08/29/batman-day-featured-books" target="_blank" class="btn btn-warning  btn-block button_batman2">Click To Know More</a>
                   </div>
                   <!-- end panel -->
                </div>
                <!-- end feature -->
                <div class="col-sm-4 feature">
-                  <div class="panel dcrebirth">
+                  <div class="panel panel-default dcrebirth">
                      <div class="panel-heading">
                         <h3 class="panel-title">Celebrate Batman Day on September 23rd!</h3>
                      </div>
                      <!-- end panel-heading -->
                      <img class="img-responsive" src="images/col3.jpg" alt="Harley_Quinn">
-                     <p>BJoin us in celebrating the legendary superhero we all love! BATMAN DAY is Saturday, September 23rd, 2017. Except this year, in celebration of Harley Quinn’s 25th anniversary, the Clown Princess of Crime is taking over!</p>
+                     <p>BJoin us in celebrating the legendary superhero we all love! BATMAN DAY is Saturday, September 23rd, 2017. Except this year, in celebration of Harley Quinn’s 25th anniversary.</p>
                      <a href="http://www.dccomics.com/blog/2017/08/23/celebrate-batman-day-on-september-23rd" target="_blank" class="btn btn-warning btn-block">Click To Know More</a>
                   </div>
                   <!-- end panel -->
@@ -223,35 +227,35 @@
                      <div class="tab-content">
                         <div class="tab-pane active" id="tab1">
                            <h4>THE FLASH <small>FASTEST MAN ALIVE</small></h4>
-                           <img src="images/flash_logo.jpg" class="img-responsive thumbnail pull-left" alt="Placeholder image">								
+                           <img src="images/flash_logo.jpg" class="img-responsive thumbnail pull-left" alt="Placeholder image">                       
                            <p>Barry Allen is an assistant scientist from the Criminal and Forensic Science Division of Central City Police Department. Barry had a reputation for being very slow, deliberate, and frequently late, which frustrated his fiancée, Iris West. One night, as he was preparing to leave work, a freak lightning bolt struck a nearby shelf in his lab and doused him with a cocktail of unnamed chemicals. As a result, Barry found that he could run extremely fast and had matching reflexes. He donned a set of red tights sporting a lightning bolt (reminiscent of the original Fawcett Comics Captain Marvel), dubbed himself the Flash (after his childhood hero, Jay Garrick), and became a crimefighter active in Central City. In his civilian identity, he stores the costume compressed in a special ring via the use of a special gas that could compress cloth fibers to a very small fraction of their normal size.</p>
                            <p>Barry sacrificed his life for the universe in the 1985 maxi-series Crisis on Infinite Earths, and remained dead for over twenty years after that story's publication. With the 2008 series Final Crisis, Barry returned to the DC Universe and returned to full prominence as the Flash in the 2009 series The Flash: Rebirth, which was soon after followed by a new volume of The Flash ongoing series, where Barry's adventures as the Scarlet Speedster are currently published.</p>
                         </div>
                         <div class="tab-pane" id="tab2">
                            <h4>BATMAN <small>he Dark Knight, and the World's Greatest Detective.</small></h4>
-                           <img src="images/batman_logo.jpg" class=" img-responsive thumbnail pull-left" alt="Placeholder image">								
+                           <img src="images/batman_logo.jpg" class=" img-responsive thumbnail pull-left" alt="Placeholder image">                        
                            <p>Batman's secret identity is Bruce Wayne, a wealthy American playboy, philanthropist, and owner of Wayne Enterprises. After witnessing the murder of his parents Dr. Thomas Wayne and Martha Wayne as a child, he swore vengeance against criminals, an oath tempered by a sense of justice. Bruce Wayne trains himself physically and intellectually and crafts a bat-inspired persona to fight crime.</P>
                            <P>Batman operates in the fictional Gotham City with assistance from various supporting characters, including his butler Alfred, police commissioner Gordon, and vigilante allies such as Robin. Unlike most superheroes, Batman does not possess any superpowers; rather, he relies on his genius intellect, physical prowess, martial arts abilities, detective skills, science and technology, vast wealth, intimidation, and indomitable will. A large assortment of villains make up Batman's rogues gallery, including his archenemy, the Joker..</p>
                            <p>The character became popular soon after his introduction in 1939 and gained his own comic book title, Batman, the following year. As the decades went on, differing interpretations of the character emerged. The late 1960s Batman television series used a camp aesthetic, which continued to be associated with the character for years after the show ended. Various creators worked to return the character to his dark roots, culminating in 1986 with The Dark Knight Returns by Frank Miller.</p>
                         </div>
                         <div class="tab-pane" id="tab3">
                            <h4>Superman <small>The Man of Steel</small></h4>
-                           <img src="images/superman_logo.jpg" class="thumbnail pull-left" alt="Placeholder image">								
+                           <img src="images/superman_logo.jpg" class="thumbnail pull-left" alt="Placeholder image">                       
                            <p>he was born Kal-El on the planet Krypton, before being rocketed to Earth as an infant by his scientist father Jor-El, moments before Krypton's destruction. Discovered and adopted by a farm couple from Kansas, the child is raised as Clark Kent and imbued with a strong moral compass. Early in his childhood, he displays various superhuman abilities, which, upon reaching maturity, he resolves to use for the benefit of humanity through a "Superman" identity.</p>
                            <P>Superman resides and operates in the fictional American city of Metropolis. As Clark Kent, he is a journalist for the Daily Planet, a Metropolis newspaper. Superman's love interest is Lois Lane, and his archenemy is the supervillain Lex Luthor. A close ally of Batman and Wonder Woman, he is typically depicted as a member of the Justice League.</p>
                         </div>
                         <div class="tab-pane" id="tab4">
                            <h4>WONDER WOMAN <small>An immortal Amazon princess, demigoddess</small>
                            </h4>
-                           <img src="images/wonder_woman_logo.png" class="img-responsive thumbnail pull-left" alt="Placeholder image">								
+                           <img src="images/wonder_woman_logo.png" class="img-responsive thumbnail pull-left" alt="Placeholder image">                      
                            <p>In present-day Paris, Diana Prince receives a photographic plate of her during World War I, which prompts her to recall her past. The daughter of Queen Hippolyta, Diana was raised on the hidden island of Themyscira, home to the Amazonian race of warrior women created by Zeus to protect mankind. As a young child, Diana wants nothing more than to train like the rest of her people. Hippolyta shares the Amazonian history with Diana, including how Ares became jealous of mankind and worked to orchestrate its destruction. When the rest of the gods from Mount Olympus attempt to stop him, Ares kills all but Zeus, who manages to hurt Ares enough to force a retreat. Zeus leaves the Amazons a weapon, the "Godkiller", in case Ares should ever return.</p>
                         </div>
                         <div class="tab-pane" id="tab5">
                            <h4>Green Lantern <small>A member of the Green Lantern Corps, a galactic "police" force</small>
                            </h4>
-                           <img src="images/green_lantern_logo.jpg" class="img-responsive thumbnail pull-left" alt="Placeholder image">								
+                           <img src="images/green_lantern_logo.jpg" class="img-responsive thumbnail pull-left" alt="Placeholder image">                        
                            <p>The character of Harold "Hal" Jordan was a second-generation test pilot, having followed in the footsteps of his father. He was given the power ring and battery (lantern) by a dying alien named Abin Sur, whose spaceship crashed on Earth. Abin Sur used his ring to seek out an individual who was "utterly honest and born without fear" to take his place as a member of the corps. At one point, when Hal Jordan was incapacitated, it was revealed that there were two individuals matching the specified criteria on Earth, the other being Guy Gardner, and the ring chose Jordan solely because of his proximity to Abin Sur. Gardner then became listed as Hal's "backup", even though he had a strong friendship with Barry Allen (The Flash). Gardner would fill in if Jordan was unavailable or otherwise incapacitated. Later, when Gardner was put into a coma, it turned out that by then there was a third human suitable for the task, John Stewart, who was designated as the Earth Sector's "backup" Lantern. Jordan, as Green Lantern, became a founding member of the Justice League of America and as of the mid-2000s is, along with John Stewart, one of the two active-duty Lanterns in Earth's sector of space.</p>
-                           <p>In 1959, to capitalize on the booming popularity of science fiction, the Green Lantern character was renovated as Hal Jordan, an officer for an interstellar law enforcement agency known as the Green Lantern Corps. Additional members of this agency, all of whom call themselves Green Lanterns, were introduced over time. Prominent Green Lanterns who also have had starring roles in the books include Guy Gardner, John Stewart, Kyle Rayner, Simon Baz and Jessica Cruz.
+                           <p>In 1959, to capitalize on the booming popularity of science fiction, the Green Lantern character was renovated as Hal Jordan, an officer for an interstellar law enforcement agency known as the Green Lantern Corps.
                            </p>
                         </div>
                      </div>
